@@ -1,0 +1,53 @@
+body {
+    height: 100%;
+    background-image: url('Element_Dendro_Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sessão {
+    height: 100%;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    backdrop-filter: blur(5px);
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.voiceline_escolha {
+    display: flex;
+    width: 15rem;
+    background-color: rgba(37, 37, 37, 0.5);
+    border: 2px solid white;
+    padding: 1rem;
+}
+
+.Boneco {
+    display: inline;
+}
+
+.voiceline_texto {
+    display: inline;
+}
+
+.elnor {
+    height: 40rem;
+}
+
+.voiceline_escolha h1 {
+    color: white;
+}
+
+.voiceline_subtitulo {
+    color: white;
+    font-size: 2rem;
+}
+
+.voiceline_paragrafo {
+    font-size: 1.6rem;
+    max-width: 20rem;
+    color: white;
+}
