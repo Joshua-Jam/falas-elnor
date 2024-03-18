@@ -14,7 +14,7 @@ body {
 
 .titulo_boneco {
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 7rem;
 }
 
 .texto_boneco {
@@ -36,14 +36,27 @@ body {
 }
 
 .voiceline_escolha {
-    font-size: 1.5rem;
+    flex-direction: column;
     align-self: start;
     font-family: 'HYWenHei 85W';
     display: flex;
     width: 20%;
+}
+
+.voiceline_title {
+    margin: 0.4rem;
+    font-size: 1.5rem;
     background-color: rgba(37, 37, 37, 0.5);
     border: 2px solid white;
     padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.voiceline_title:hover {
+    background-color: rgba(37, 37, 37, 0.7);
+    scale: 1.08;
 }
 
 .Boneco {
@@ -72,7 +85,7 @@ body {
 .voiceline_paragrafo {
     font-family: 'HYWenHei 85W';
     font-size: 1.6rem;
-    max-width: 25rem;
+    width: 25rem;
     color: white;
     line-height: 1.2;
 }

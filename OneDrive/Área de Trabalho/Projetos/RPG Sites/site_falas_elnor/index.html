@@ -11,7 +11,8 @@
     </div>
     <section class="sessão">
         <div class="voiceline_escolha">
-            <h1 class="voiceline_title">Sobre Santine</h1>
+            <h1 onclick="changeParagraph(1)" class="voiceline_title">Sobre Santine</h1>
+            <h1 onclick="changeParagraph(2)" class="voiceline_title">Sobre Kojiro</h1>
         </div>
 
         <div class="Boneco">
@@ -19,15 +20,33 @@
         </div>
 
         <div class="voiceline_texto">
-            <h1 class="voiceline_subtitulo">Santine</h1>
-            <p class="voiceline_paragrafo">Hmm, o elfo do grupo é sem dúvida inconsequente, mas muito forte,
-                aquela fieriatita dele parece um material de
-                capacidades e utilidades bem interessantes, fora isso ele se mostrou um bom companheiro nesses
-                tempos
-                que
-                estou com a
-                expurgação. Um companheiro burro e com vontade até demais de matar criaturas da praga, mas um bom
-                companheiro.</p>
+            <h1 onclick=changeParagraph(1) class="voiceline_subtitulo">Santine</h1>
+            <p class="voiceline_paragrafo">---</p>
         </div>
     </section>
 </body>
+<script>
+    function changeParagraph(paragraphNumber) {
+        var newText = "Hmm, o elfo do grupo é sem dúvida inconsequente, mas muito forte, aquela fieriatita dele parece um material de capacidades e utilidades bem interessantes, fora isso ele se mostrou um bom companheiro nesses tempos que estou com a expurgação. Um companheiro burro e com vontade até demais de matar criaturas da praga, mas um bom companheiro.";
+
+        // Determine which paragraph to show based on the clicked text
+        switch (paragraphNumber) {
+            case 1:
+                newText = "Hmm, o elfo do grupo é sem dúvida inconsequente, mas muito forte, aquela fieriatita dele parece um material de capacidades e utilidades bem interessantes, fora isso ele se mostrou um bom companheiro nesses tempos que estou com a expurgação. Um companheiro burro e com vontade até demais de matar criaturas da praga, mas um bom companheiro.";
+                break;
+            case 2:
+                newText = "Paragraph 2 content.";
+                break;
+            case 3:
+                newText = "Paragraph 3 content.";
+                break;
+            // Add more cases for additional texts if needed
+            default:
+                newText = "Default paragraph content.";
+                break;
+        }
+
+        // Update the paragraph text
+        document.getElementById("voiceline_paragrafo").textContent = newText;
+    }
+</script>
