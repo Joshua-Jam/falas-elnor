@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'HYWenHei 85W';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HYWenHei 85W'), url('zhcn.woff') format('woff');
+}
+
 body {
     height: 100%;
     background-image: url('Element_Dendro_Background.png');
@@ -5,7 +12,19 @@ body {
     background-size: cover;
 }
 
+.titulo_boneco {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.texto_boneco {
+    font-size: 2rem;
+    font-family: 'HYWenHei 85W';
+    color: #FFB84B;
+}
+
 .sessão {
+    margin-top: 6rem;
     height: 100%;
     padding-right: 4rem;
     padding-left: 4rem;
@@ -13,13 +32,15 @@ body {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     align-content: center;
 }
 
 .voiceline_escolha {
+    font-size: 1.5rem;
+    align-self: start;
+    font-family: 'HYWenHei 85W';
     display: flex;
-    width: 15rem;
+    width: 20%;
     background-color: rgba(37, 37, 37, 0.5);
     border: 2px solid white;
     padding: 1rem;
@@ -34,7 +55,7 @@ body {
 }
 
 .elnor {
-    height: 40rem;
+    height: 55rem;
 }
 
 .voiceline_escolha h1 {
@@ -42,12 +63,16 @@ body {
 }
 
 .voiceline_subtitulo {
+    font-family: 'HYWenHei 85W';
     color: white;
     font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .voiceline_paragrafo {
+    font-family: 'HYWenHei 85W';
     font-size: 1.6rem;
-    max-width: 20rem;
+    max-width: 25rem;
     color: white;
+    line-height: 1.2;
 }
